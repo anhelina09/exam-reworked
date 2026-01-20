@@ -34,14 +34,14 @@ const WelcomePage = () => {
       </div>
 
       <div style={styles.grid}>
-        {/* Картка 1: Перехід на головну (Best color) */}
+        
         <div className="welcome-card" style={styles.card} onClick={() => navigate('/main')}>
           <div style={{...styles.iconBox, backgroundColor: '#0066ff'}}>✨</div>
           <h2 style={styles.cardTitle}><AnimatedText text="Explore Trends" /></h2>
           <p style={styles.cardDesc}>Check the best color of the day and top companies.</p>
         </div>
 
-        {/* Картка 2: Перехід до Генератора */}
+        
         <div className="welcome-card" style={styles.card} onClick={() => navigate('/generator')}>
           <div style={{...styles.iconBox, backgroundColor: '#ff0055'}}>🎨</div>
           <h2 style={styles.cardTitle}><AnimatedText text="Open Generator" /></h2>
