@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
+
 const AnimatedText = ({ text }) => {
   const getRandomColor = () => {
     const colors = ['#0066ff', '#ff3396', '#ff84e8', '#7944ce', '#4caf50', '#ff9800', '#f44336', '#00bcd4'];
