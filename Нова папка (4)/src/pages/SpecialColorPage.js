@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
+
 const SpecialColorPage = () => {
   const { hex } = useParams();
   const navigate = useNavigate();
