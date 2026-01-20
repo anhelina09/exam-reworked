@@ -151,7 +151,7 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* TRUSTED BY */}
+      
       <div style={styles.marqueeSection}>
         <p style={styles.trustedText}>TRUSTED BY OVER 3 MILLION CREATIVE MINDS AND TOP COMPANIES</p>
         <div style={{overflow: 'hidden'}}>
