@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-// --- КОМПОНЕНТ АНІМОВАНОГО ТЕКСТУ З РІЗНОКОЛЬОРОВИМИ БУКВАМИ ---
+
 const AnimatedText = ({ text }) => {
   const getRandomColor = () => {
     const colors = ['#0066ff', '#ff3396', '#ff84e8', '#7944ce', '#4caf50', '#ff9800', '#f44336', '#00bcd4'];
@@ -123,7 +123,7 @@ const MainPage = () => {
         .hover-scale:hover { transform: scale(1.02); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
       `}</style>
 
-      {/* HEADER & HERO */}
+    
       <header style={styles.header}>
         <div style={styles.logo} onClick={() => navigate('/')}><AnimatedText text="Coolors" /></div>
         <div style={styles.navGroup}>
@@ -166,7 +166,7 @@ const MainPage = () => {
         </div>
       </div>
 
-      {/* DESCRIPTION */}
+     
       <section style={styles.descriptionSection}>
         <div style={styles.descriptionContent}>
           <p style={styles.mainDescription}>
@@ -186,7 +186,6 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* TOOLS GRID */}
       <section style={styles.toolsSection}>
         <p style={styles.toolsLabel}>OUR TOOLS, LOVED BY MILLIONS</p>
         <div style={styles.toolsGrid}>
@@ -199,7 +198,7 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* RESOURCES */}
+      
       <section style={styles.resourcesSection}>
         <p style={styles.toolsLabel}>MORE USEFUL RESOURCES</p>
         <div style={styles.resourcesGrid}>
@@ -212,7 +211,7 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* PLUGINS */}
+      
       <section style={styles.pluginsSection}>
         <p style={styles.toolsLabel}>PLUGINS AND APPS</p>
         <div style={styles.pluginsGrid}>
@@ -222,14 +221,14 @@ const MainPage = () => {
         </div>
       </section>
 
-      {/* BIG SLOGAN WITH MULTI-COLOR ANIMATION */}
+      
       <div style={styles.sloganContainer}>
         <h2 style={styles.sloganText}>
           <AnimatedText text="Make something colorful!" />
         </h2>
       </div>
 
-      {/* FOOTER */}
+      
       <footer style={styles.footer}>
         <div style={styles.footerGrid}>
           <div style={styles.footerCol}>
