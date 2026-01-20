@@ -7,7 +7,7 @@ const SpecialColorPage = () => {
   const cleanHex = hex ? hex.replace('#', '') : '301934';
   const colorHex = `#${cleanHex}`;
 
-  // Визначаємо колір тексту (чорний для світлих фонів, білий для темних)
+  
   const getContrastColor = (hexCode) => {
     const r = parseInt(hexCode.substring(0, 2), 16) || 0;
     const g = parseInt(hexCode.substring(2, 4), 16) || 0;
@@ -20,7 +20,7 @@ const SpecialColorPage = () => {
 
   return (
     <div style={styles.pageContainer}>
-      {/* HEADER */}
+      
       <header style={styles.header}>
         <div style={styles.logo} onClick={() => navigate('/')}>coolors</div>
         <div style={styles.headerRight}>
@@ -33,7 +33,7 @@ const SpecialColorPage = () => {
       </header>
 
       <main style={styles.mainContent}>
-        {/* Breadcrumbs */}
+        
         <div style={styles.breadcrumbs}>
           <span>Colors</span> <span style={{margin:'0 8px'}}>›</span> 
           <span style={{fontWeight:'bold'}}>#{cleanHex.toUpperCase()}</span>
@@ -45,7 +45,7 @@ const SpecialColorPage = () => {
           This shade is ideal for modern UI design.
         </p>
 
-        {/* ВЕЛИКА КАРТКА */}
+        
         <div style={{ ...styles.colorCard, backgroundColor: colorHex }}>
           <h2 style={{ ...styles.hexDisplay, color: textColor }}>{cleanHex.toUpperCase()}</h2>
           <div style={styles.cardActions}>
@@ -54,7 +54,7 @@ const SpecialColorPage = () => {
           </div>
         </div>
 
-        {/* ТАБЛИЦЯ CONVERSION */}
+        
         <section style={styles.conversionSection}>
           <h2 style={styles.sectionTitle}>Conversion</h2>
           <div style={styles.tablesGrid}>
@@ -70,7 +70,7 @@ const SpecialColorPage = () => {
           </div>
         </section>
 
-        {/* ОПИС ТА РЕСУРСИ (Footer Section) */}
+        
         <div style={styles.footerLinksGrid}>
           <div style={styles.footerCol}>
             <h4 style={styles.footerHead}>TOOLS</h4>
